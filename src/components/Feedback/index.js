@@ -68,11 +68,11 @@ class Feedback extends React.Component {
                 })
                 .then(() => {
                     hideLoadingMessage();
-                    setTimeout(() => { message.success('Message sent') }, 350)
+                    setTimeout(() => { message.success('Message sent') }, 750)
                 })
                 .catch(() => {
                     hideLoadingMessage();
-                    setTimeout(() => { message.error('Error while sending message') }, 350)
+                    setTimeout(() => { message.error('Error while sending message') }, 750)
                 })
                 this.setState(initialState)
             }
